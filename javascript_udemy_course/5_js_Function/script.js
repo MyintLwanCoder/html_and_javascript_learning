@@ -1,25 +1,25 @@
 'use strict';
 
-/*function addition(num1, num2) {
+function addition(num1, num2) {
     var sum = num1 + num2;
     return sum;
 }
 
 var result = addition(10, 5);
-console.log(result);        // 15*/
+console.log(result);        // 15
 
 // ==============================
 
-/*var result = addition(10, 5);
+var result = addition(10, 5);
 console.log(result);        // 15
 
 function addition(num1, num2) {
     var sum = num1 + num2;
     return sum;
-}*/
+}
 
-/*var addition = new Function('a', 'b', 'return a + b');
-console.log( addition(10, 20) );    // 30*/
+var addition = new Function('a', 'b', 'return a + b');
+console.log( addition(10, 20) );    // 30
 
 var result = addition(10, 5);
 console.log(result);
@@ -56,7 +56,7 @@ console.log(total);     // 30
     var sign = 'Hello Everyone';
     return sign;
 }) ();
-console.log(sign);
+console.log('sign');
 
 var result = (function greet() {
     var sign = 'Hello Everyone';
@@ -73,10 +73,10 @@ function greet(name) {
 
 function processUser(callback) {
     var name = prompt('Please enter your name:');
-    callback(name);
+    callback('name');
 }
 
-processUser(greet);
+// processUser(greet);
 
 // Javascript Function type
 
@@ -170,7 +170,7 @@ var module = {
 }
 
 var retriveObj = module.getObj;
-console.log(retriveObj());
+console.log('retriveObj()');
 
 var module = {
     obj: {animal: 'Lion', sleepDuration: '14 and 18 hours'},
@@ -187,8 +187,8 @@ console.log(boundGetObj());
 
 // recursion
 
-Factorial of 4:
-4! = 4 x 3 x 2 x 1 = 24
+// Factorial of 4:
+// 4! = 4 x 3 x 2 x 1 = 24
 
 function factorial(n) {
     var result = 1;
@@ -284,13 +284,13 @@ var webProducts = [{browser: 'Chrome', id: 0},
 var createIdForWebProducts = productIdCreator(webProducts);
 
 var chromeId = createIdForWebProducts[0];
-console.log(chromeId.id());     // 103
+console.log('chromeId.id()');     // 103
 
 var firefoxId = createIdForWebProducts[1];
-console.log(firefoxId.id());    // 103
+console.log('firefoxId.id()');    // 103
 
 var explorerId = createIdForWebProducts[2];
-console.log(explorerId.id());   // 103
+console.log('explorerId.id()');   // 103
 
 // Fix using IIFE:
 
@@ -314,13 +314,13 @@ var webProducts = [{browser: 'Chrome', id: 0},
 var createIdForWebProducts = productIdCreator(webProducts);
 
 var chromeId = createIdForWebProducts[0];
-console.log(chromeId.id);     // 100
+console.log('chromeId.id');     // 100
 
 var firefoxId = createIdForWebProducts[1];
-console.log(firefoxId.id);    // 101
+console.log('firefoxId.id');    // 101
 
 var explorerId = createIdForWebProducts[2];
-console.log(explorerId.id);   // 102
+console.log('explorerId.id');   // 102
 
 // Timers
 
@@ -336,9 +336,53 @@ function showWarning() {
 }
 
 console.log('!! Execution Started !!');
+// delayedWarning
+//clearTimeout(id);
+
+var timeoutId;
+function delayedWarning(){
+    timeoutId = window.setTimeout(showWarning, 2000);
+}
+
+function showWarning(){
+    console.log('Delayed by 2 seconds !!!');
+    clearTimeout(timeoutId);
+    console.log('!! Execution Stopped !!');
+    console.log('!! Execution Stopped !!');
+}
+
+console.log('!! Execution Started !!');
 delayedWarning();
 
-//clearTimeout(id);
-function productIdCreator (webBrowsers){
-    
+// var id = setInterval(fn, delay);
+
+var count = 0;
+function delayeWarning(){
+    window.setInterval(showWarning, 2000);
 }
+
+function showWarning(){
+    console.log('Recursive Delay: ' + (++count));
+}
+
+console.log('Execution Started !!');
+delayedWarning();
+
+// clearInterval(id);
+
+var timeoutId;
+var count = 0;
+function delayeWarning(){
+    timeoutId = window.setInterval(showWarning, 2000);
+}
+
+function showWarning(){
+    console.log('Recursive Delay: ' + (++count));
+    if (count == 3) {
+        clearInterval(timeoutId);
+        console.log('Execution Stopped !!');
+    }
+}
+
+console.log('Execution Started !!');
+delayedWarning();
