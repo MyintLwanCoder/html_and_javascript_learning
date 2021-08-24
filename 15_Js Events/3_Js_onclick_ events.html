@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Event</title>
+	<style>
+	body {
+		top: 25px;
+			background-color: blue;
+			color: red;
+			font: 1em sans-serif;
+			bottom: 15px;
+			marks: inherit;
+			font-size: 50px;
+		}
+
+		h1{
+			color: green;
+			font-size: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>avascript Event</h1>
+	<h2 id="demo"></h2>
+	<!-- <button onclick="document.getElementById('demo').innerHTML = Date()">show answer Date time</button> -->
+	<button onclick="showDate()">show datetime</button>
+
+	<script>
+		function showDate(){
+document.getElementById("demo").innerHTML = Date()
+}
+	</script>
+</body>
+</html>

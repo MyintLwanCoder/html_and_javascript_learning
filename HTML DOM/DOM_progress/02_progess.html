@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<video controls oncanplay="myFunction()">
+		<source src="video/mov_bbb.mp4" type="video/mp4">
+			<source src="video/mov_bbb.ogg" type="video/ogg">
+		Lorem ipsum dolor sit amet consectetur.
+	</video>
+    <p>Video country <a href="https:/www.bigbuckbunny.org" target="_blank">Big Buck Bunny</a></p>
+    
+    <script>
+document.getElementById("myVideo").addEventListener("progress", myFunction);
+
+function myFunction() {
+  alert("Downloading video");
+}
+</script>
+</body>
+</html>

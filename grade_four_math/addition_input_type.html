@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Addntion in Javascript</title>
+	<style>
+		body {
+			background-color: blue;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Addntion in Javascript</h1>
+    <label for="">Enter First Number</label>
+    <input type="text" id="num1">
+    <br>
+    <label for="">Enter First Number</label>
+    <input type="text" id="num2">
+    <br>
+    <input type="button" value="calculate Answer" onclick="calculate()">
+    <br>
+    <p >Calculate Answer is : <span id="show_answer"></span></p>
+
+
+    <script>
+    	function calculate(num1,num2){
+        var x =document.getElementById("num1").value;
+        var y = document.getElementById("num2").value;
+        var z= 0;
+        z = Number(x)+Number(y);
+
+        document.getElementById("show_answer").innerHTML = z;
+    	}
+    </script>	
+</body>
+</html>

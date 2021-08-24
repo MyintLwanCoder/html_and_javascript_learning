@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+
+
+	<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Atque iure inventore, fuga.Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus quos, ad exercitationem obcaecati impedit enim dolores inventore repellat facere aspernatur, laboriosam similique, nemo. <br>(blur).</p>
+	
+    Enter your name: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
+<script>
+function focusFunction() {
+  // Focus = Changes the background color of input to yellow
+  document.getElementById("myInput").style.background = "yellow";
+}
+
+function blurFunction() {
+  // No focus = Changes the background color of input to red
+  document.getElementById("myInput").style.background = "red";
+}
+</script>
+
+</body>
+</html>

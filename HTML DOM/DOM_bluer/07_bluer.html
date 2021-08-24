@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Atque iure inventore, fuga.</p>
+	
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi temporibus quos, ad exercitationem obcaecati impedit enim dolores inventore repellat facere aspernatur, laboriosam similique, nemo. <br>(blur).</p>
+	
+    
+<form id="myForm">
+  <input type="text" id="myInput">
+</form>
+
+<script>
+var x = document.getElementById("myForm");
+x.addEventListener("focusin", myFocusFunction);
+x.addEventListener("focusout", myBlurFunction);
+
+function myFocusFunction() {
+  document.getElementById("myInput").style.backgroundColor = "yellow";
+}
+
+function myBlurFunction() {
+  document.getElementById("myInput").style.backgroundColor = "";  
+}
+</script>
+</body>
+</html>

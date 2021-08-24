@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript Onmouseveover event</title>
+</head>
+<body>
+	<h1>Javascript Onmouseveover event</h1>
+
+	<img src="1.png" onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" width="50%" height="50%">
+
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia blanditiis distinctio, error neque non dolorum soluta. Voluptatum tenetur asperiores quis, omnis reiciendis optio repellendus quam dolores excepturi sequi ipsum dolor!</p>
+	<p>Lorem ipsum dolor sit amet, consectetur, adipisicing elit. Culpa facilis cumque maiores quos expedita fuga quo earum itaque dolore, rerum, non corporis tenetur molestias at quae adipisci nobis tempore. Repellendus.</p>
+
+	<script>
+		function bigImg(x) {
+			x.style.height = "80%";
+			x.style.width ="80%"
+		}
+		function normalImg(x) {
+			x.style.height = "50%";
+			x.style.width ="50%"
+		}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum debitis quas consequuntur sunt incidunt dolores, sit sed mollitia inventore quo nam harum, at dolorem laborum, exercitationem a corporis. Voluptas, doloremque!
+	</p>
+
+	<script>
+		function mouseDown(){
+			document.getElementById("myP").style.color = 
+		"red";
+		}
+
+		function mouseUp(){
+			document.getElementById("myP").style.color = "green";
+		}
+	</script>
+</body>
+</html>

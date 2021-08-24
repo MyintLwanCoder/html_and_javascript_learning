@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Javascript onchange event</title>
+</head>
+<body>
+	<h1>Javascript onchange event</h1>
+
+	<h1>သင်ံမြိုကို ရွေးချယ်ပါ</h1>
+
+	<select id="mySelect" onchange="myfunction()">
+		<option value="Yangon">Yangon</option>
+		<option value="Maydaly">Maydaly</option>
+		<option value="Maymyo">Maymyo</option>
+		<option value="Naypitaw">Naypitaw</option>
+		
+</select>
+
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Suscipit corrupti temporibus, excepturi voluptates neque alias pariatur, veniam, fuga vel distinctio eaque sit, aliquam amet possimus minima voluptate velit labore provident.</p><br>
+       
+<p id="demo"></p>
+
+<script>
+	function myfunction(){
+		var x = document.getElementById("mySelect").value;
+		document.getElementById("demo").innerHTML = "သင်ရွေချယ်ထာသော မြိုမှာ:" + x;
+		//document.write("Your sltcted is: " + x);
+	}
+</script>
+</body>
+</html>

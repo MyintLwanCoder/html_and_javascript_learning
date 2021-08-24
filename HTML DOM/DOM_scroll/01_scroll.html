@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		div{
+			border: 1px solid black;
+			width: 200px;
+			height: 100px;
+			overflow: scroll;
+		}
+	</style>
+</head>
+<body>
+	<p>Try the scrollbar in div.</p>
+
+	<div onscroll="myFunction()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic voluptates animi, est?
+	<br><br>
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores velit, esse natus eius placeat, molestias aut.</div>
+
+     <p>Scrolled <span id="demo">0</span>times</p>
+
+     <script>
+     	var x = 0;
+     	function myFunction(){
+     		document.getElementById("demo").innerHTML = x +=1;
+     	}
+     </script>
+</body>
+</html>

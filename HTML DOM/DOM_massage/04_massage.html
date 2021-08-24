@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+  <p>The URL of the document that invoked the onmessage event:</p>
+<div id="myDIV"></div>
+
+<p><strong>Note:</strong> Server-Sent Events are not supported in Internet Explorer.</p>
+
+<script>
+if(typeof(EventSource) !== "undefined") {
+  var source = new EventSource("/html/demo_sse.php");
+  source.onmessage = function(event) {
+    document.getElementById("myDIV").innerHTML = event.origin;
+  };
+} else {
+  document.getElementById("myDIV").innerHTML = "Sorry, your browser does not support server-sent events...";
+}
+</script>
+</body>
+</html>
+

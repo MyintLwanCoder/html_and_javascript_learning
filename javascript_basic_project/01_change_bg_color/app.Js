@@ -1,0 +1,13 @@
+const colors = ["blue","red","rgba(113,122,200)", "#f15025"]
+const btn = document.getElementById("btn");
+const color= document.getElementById(".color");
+
+btn.addEventListener("click", function(){
+	const randdomNumber = getRandomNumber();
+
+	document.body.style.backgroundColor = colors[randdomNumber];
+	color.textContent = colors[randdomNumber];
+});
+function getRandomNumber(){
+	return  Math.floor(Math.random() * colors.length);
+}

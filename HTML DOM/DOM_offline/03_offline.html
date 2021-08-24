@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Lorem ipsum HTML DOM dolor sit amet consectetur adipisicing elit. Iure maiores hic doloribus consequuntur enim nam rerum saepe quod.</p>
+
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia fugit, amet reprehenderit numquam veritatis, debitis nulla rerum aspernatur.</p>
+
+    <p><strong>Note:</strong>Lorem ipsum, dolor sit amet consectetur adipisicing, elit. Culpa ex molestias ratione quibusdam corrupti voluptas dolor maiores debitis.</p>
+<script>
+document.getElementsByTagName("BODY")[0].ononline = function() {onFunction()};
+document.getElementsByTagName("BODY")[0].onoffline = function() {offFunction()};
+
+function onFunction() {
+  alert ("Your browser is working online.");
+}
+
+function offFunction() {
+  alert ("Your browser is working offline.");
+}
+</script>
+
+</body>
+</html>

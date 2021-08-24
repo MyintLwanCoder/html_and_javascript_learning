@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Lorem ipsum, dolor sit amet consectetur, adipisicing elit. Fugiat soluta voluptatem neque culpa natus doloremque harum!</p>
+
+	<p>play, pause and then play the video again</p>
+
+	<audio controls oncanplaying="myFunction()">
+		<source src="video/horse.mp3" type="audio/mpeg">
+		<source src="video/horse.ogg" type="audio/ogg">
+			Your broswer does not support the audio tag.
+	</audio>
+	<script>
+function myFunction() {
+  alert("The audio has started to play");
+}
+</script>
+
+</body>
+</html>

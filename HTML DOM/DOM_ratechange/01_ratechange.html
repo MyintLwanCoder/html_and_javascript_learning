@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui necessitatibus non velit, voluptas porro placeat voluptatem vero illum, quia atque ullam aliquam enim. Deleniti possimus, est cupiditate aliquid. Inventore, suscipit.</p>
+
+	<video id="myVideo" width="320" height="240" autoplay controls onratechange="myFunction()">
+	<source src="video/movie.mp4" type="video/mp4">
+		<source src="video/movie.ogg" type="video/ogg">
+		Your broswer does not support the video tag.
+	</video><hr>
+
+	<button onclick="setplaySpeed()" type="button">set video to be play in slow motion</button>
+
+	<script>
+// Get the video element with id="myVideo"
+var x = document.getElementById("myVideo");
+
+// Set the current playback speed of the video to 0.3 (slow motion)
+function setPlaySpeed() { 
+  x.playbackRate = 0.3;
+} 
+
+// Alert some text when the playing speed of the video is changed
+function myFunction() { 
+  alert("The playing speed of the video was changed");
+}
+</script>
+
+</body>
+</html>

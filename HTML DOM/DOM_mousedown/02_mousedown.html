@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum debitis quas consequuntur sunt incidunt dolores, sit sed mollitia inventore quo nam harum, at dolorem laborum, exercitationem a corporis. Voluptas, doloremque!
+	</p>
+
+	<p id="demo" onmousedown="mouseDown()" onmouseup="mouseUp()">click me.</p>
+
+	<script>
+		function mouseDown(){
+			document.getElementById("demo").innerHTML = 
+		"The mouse burron is held down.";
+		}
+
+		function mouseUp(){
+			document.getElementById("demo").innerHTML = "You reseased the morse button.";
+		}
+	</script>
+</body>
+</html>

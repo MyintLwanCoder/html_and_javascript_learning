@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="/action_page.php" method="get">
+  Name: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Cupiditate fugit sed, quas!</p>
+
+<p><strong>Note:</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ratione quod eaque, officia praesentium cum voluptatibus!</p>
+
+<script>
+	document.getElementById("myInput").addEventListener("invalid", myFunction);
+
+	function myFunction(){
+		alert("Must contain 6 or more characters");
+	}
+</script>
+
+</body>
+</html>

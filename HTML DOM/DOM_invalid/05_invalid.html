@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<form action="/action_page.php" method="get">
+  pick a numbe between 2 and 5: <input type="number" id="myInput" name="quantity" min="2" max="5" required>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Cupiditate fugit sed, quas!</p>
+
+<p><strong>Note:</strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ratione quod eaque, officia praesentium cum voluptatibus!</p>
+
+<script>
+	document.getElementById("myInput").addEventListener("invalid", myFunction);
+
+	function myFunction(){
+		alert("You must pick a number betwiin 2 and 5. You chose:" + this.value);
+	}
+</script>
+
+</body>
+</html>

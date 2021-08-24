@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body onresize="myFunction()">
+
+	<p>Lorem ipsum dolor, sit amet consectetur, adipisicing elit. Magnam, dolore, tempora? Officiis!</p>
+
+	<p id="demo"></p>
+	<p><strong>Note:</strong>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit laudantium error sed non aut molestias qui?</p>
+
+	<script>
+		function myFunction(){
+			var w = window.outerwith;
+			var h = wi ndow.outerHeight;
+			var txt = "window  size: width=" + w + ",height=" + h;
+			document.getElementById("demo").innerHTML = txt;
+		}
+		
+	</script>
+	
+</body>
+</html>

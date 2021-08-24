@@ -1,0 +1,19 @@
+body{
+	color: red;
+	background: blue;
+}
+h1{
+	font-size: 30px;
+	padding: 25px;
+	text-align: center;
+	height: 12px;
+	margin: 1px auto;
+	content: 1px all;
+}
+.first{
+	color: green;
+}
+#Your-name{
+	background-color: #eb7628;
+	border: 5px solid #000000;
+}
